@@ -4209,3 +4209,12 @@ table.hover tr:nth-of-type(even):hover {
 .popular-pagination {
   padding-bottom: 10px !important;
 }
+#counter_area td {
+  background-color: #f0f0f0 !important;
+  color: #000 !important;
+  border: none !important;
+}
+#counter_area div {
+  border: none !important;
+  background-color: #f0f0f0 !important;
+}
