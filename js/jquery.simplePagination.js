@@ -396,8 +396,8 @@
 	};
 
 	$(".recommended-pagination").pagination({
-		items: 3,
-		displayedPages: 2,
+		items: 9,
+		displayedPages: 9,
 		prevText:"前へ",
 		nextText:"次へ",
 		cssStyle: 'light-theme',
@@ -406,28 +406,13 @@
 		}
 	})
 	function showRecommendedPage(currentPageNumber) {
-		if (currentPageNumber == 1) {
-			var recommendedPage1 = "#recommended-page-" + (parseInt(currentPageNumber) - 1);
-			var recommendedPage2 = "#recommended-page-" + (parseInt(currentPageNumber) + 0);
-			var recommendedPage3 = "#recommended-page-" + (parseInt(currentPageNumber) + 1);
-			var recommendedPage4 = "#recommended-page-" + (parseInt(currentPageNumber) + 2);
-			var recommendedPage5 = "#recommended-page-" + (parseInt(currentPageNumber) + 3);
-			var recommendedPage6 = "#recommended-page-" + (parseInt(currentPageNumber) + 4);
-		}else if (currentPageNumber == 2) {
-			var recommendedPage1 = "#recommended-page-" + (parseInt(currentPageNumber) + 4);
-			var recommendedPage2 = "#recommended-page-" + (parseInt(currentPageNumber) + 5);
-			var recommendedPage3 = "#recommended-page-" + (parseInt(currentPageNumber) + 6);
-			var recommendedPage4 = "#recommended-page-" + (parseInt(currentPageNumber) + 7);
-			var recommendedPage5 = "#recommended-page-" + (parseInt(currentPageNumber) + 8);
-			var recommendedPage6 = "#recommended-page-" + (parseInt(currentPageNumber) + 9);
-		}else if (currentPageNumber == 3) {
-			var recommendedPage1 = "#recommended-page-" + (parseInt(currentPageNumber) + 9);
-			var recommendedPage2 = "#recommended-page-" + (parseInt(currentPageNumber) + 10);
-			var recommendedPage3 = "#recommended-page-" + (parseInt(currentPageNumber) + 11);
-			var recommendedPage4 = "#recommended-page-" + (parseInt(currentPageNumber) + 12);
-			var recommendedPage5 = "#recommended-page-" + (parseInt(currentPageNumber) + 13);
-			var recommendedPage6 = "#recommended-page-" + (parseInt(currentPageNumber) + 14);
-		}
+		var recommendedPage1 = "#recommended-page-" + ((parseInt(currentPageNumber) * 6) - 6);
+		var recommendedPage2 = "#recommended-page-" + ((parseInt(currentPageNumber) * 6) - 5);
+		var recommendedPage3 = "#recommended-page-" + ((parseInt(currentPageNumber) * 6) - 4);
+		var recommendedPage4 = "#recommended-page-" + ((parseInt(currentPageNumber) * 6) - 3);
+		var recommendedPage5 = "#recommended-page-" + ((parseInt(currentPageNumber) * 6) - 2);
+		var recommendedPage6 = "#recommended-page-" + ((parseInt(currentPageNumber) * 6) - 1);
+		
 		$('.recommended-selection').hide();
 		$(recommendedPage1).show();
 		$(recommendedPage2).show();
@@ -437,8 +422,8 @@
 		$(recommendedPage6).show();
 	}
 	$(".popular-pagination").pagination({
-		items: 3,
-		displayedPages: 2,
+		items: 9,
+		displayedPages: 9,
 		prevText:"前へ",
 		nextText:"次へ",
 		cssStyle: 'light-theme',
@@ -447,28 +432,13 @@
 		}
 	})
 	function showPopularPage(currentPageNumber) {
-		if (currentPageNumber == 1) {
-			var popularPage1 = "#popular-page-" + (parseInt(currentPageNumber) - 1);
-			var popularPage2 = "#popular-page-" + (parseInt(currentPageNumber) + 0);
-			var popularPage3 = "#popular-page-" + (parseInt(currentPageNumber) + 1);
-			var popularPage4 = "#popular-page-" + (parseInt(currentPageNumber) + 2);
-			var popularPage5 = "#popular-page-" + (parseInt(currentPageNumber) + 3);
-			var popularPage6 = "#popular-page-" + (parseInt(currentPageNumber) + 4);
-		}else if (currentPageNumber == 2) {
-			var popularPage1 = "#popular-page-" + (parseInt(currentPageNumber) + 4);
-			var popularPage2 = "#popular-page-" + (parseInt(currentPageNumber) + 5);
-			var popularPage3 = "#popular-page-" + (parseInt(currentPageNumber) + 6);
-			var popularPage4 = "#popular-page-" + (parseInt(currentPageNumber) + 7);
-			var popularPage5 = "#popular-page-" + (parseInt(currentPageNumber) + 8);
-			var popularPage6 = "#popular-page-" + (parseInt(currentPageNumber) + 9);
-		}else if (currentPageNumber == 3) {
-			var popularPage1 = "#popular-page-" + (parseInt(currentPageNumber) + 9);
-			var popularPage2 = "#popular-page-" + (parseInt(currentPageNumber) + 10);
-			var popularPage3 = "#popular-page-" + (parseInt(currentPageNumber) + 11);
-			var popularPage4 = "#popular-page-" + (parseInt(currentPageNumber) + 12);
-			var popularPage5 = "#popular-page-" + (parseInt(currentPageNumber) + 13);
-			var popularPage6 = "#popular-page-" + (parseInt(currentPageNumber) + 14);
-		}
+		var popularPage1 = "#popular-page-" + ((parseInt(currentPageNumber) * 6) - 6);
+		var popularPage2 = "#popular-page-" + ((parseInt(currentPageNumber) * 6) - 5);
+		var popularPage3 = "#popular-page-" + ((parseInt(currentPageNumber) * 6) - 4);
+		var popularPage4 = "#popular-page-" + ((parseInt(currentPageNumber) * 6) - 3);
+		var popularPage5 = "#popular-page-" + ((parseInt(currentPageNumber) * 6) - 2);
+		var popularPage6 = "#popular-page-" + ((parseInt(currentPageNumber) * 6) - 1);
+		
 		$('.popular-selection').hide();
 		$(popularPage1).show();
 		$(popularPage2).show();
