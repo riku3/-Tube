@@ -6,7 +6,7 @@
     var params = {
       "q": searchTerm,
       "part": 'snippet',
-      "maxResults": '18',
+      "maxResults": '50',
       "order": 'viewCount',
       "type": 'video',
       "videoEmbeddable": true,
