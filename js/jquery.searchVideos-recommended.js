@@ -7,15 +7,54 @@
       "q": searchTerm,
       "part": 'snippet',
       "maxResults": '50',
-      "order": 'relevance',
+      "order": 'viewCount',
       "type": 'video',
       "videoEmbeddable": true,
+      "fields": 'nextPageToken,items(id(videoId),snippet(title,channelTitle,publishedAt,thumbnails(high(url))))',
       "key": 'AIzaSyBGNVir5PkHatVkhCcJ-TlA3nf9O8x0Jms'
     }
     url = 'https://www.googleapis.com/youtube/v3/search';
   
     jQuery.getJSON(url, params, function(data){
-      showResults(data.items);
+      var results = data.items;
+      var pageToken = data.nextPageToken;
+
+      var params = {
+        "pageToken": pageToken,
+        "q": searchTerm,
+        "part": 'snippet',
+        "maxResults": '50',
+        "order": 'viewCount',
+        "type": 'video',
+        "videoEmbeddable": true,
+        "fields": 'nextPageToken,items(id(videoId),snippet(title,channelTitle,publishedAt,thumbnails(high(url))))',
+        "key": 'AIzaSyAUxxwVAougKJy-Y4hbATWT8jD_G2sRtf0'
+      }
+
+      jQuery.getJSON(url, params, function(data){
+        jQuery.each(data.items, function(index,value){
+          results.push(value);
+        })
+        var pageToken = data.nextPageToken;
+        var params = {
+          "pageToken": pageToken,
+          "q": searchTerm,
+          "part": 'snippet',
+          "maxResults": '50',
+          "order": 'viewCount',
+          "type": 'video',
+          "videoEmbeddable": true,
+          "fields": 'items(id(videoId),snippet(title,channelTitle,publishedAt,thumbnails(high(url))))',
+          "key": 'AIzaSyAb3_b2EnSDKzJ5xxgUR4Q_612pBrOprTk'
+        }
+        
+        jQuery.getJSON(url, params, function(data){
+          jQuery.each(data.items, function(index,value){
+            results.push(value);
+          })
+          showResults(results);
+        })
+      })
      })
   }
   
