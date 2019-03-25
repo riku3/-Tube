@@ -396,8 +396,8 @@
 	};
 
 	$(".recommended-pagination").pagination({
-		items: 9,
-		displayedPages: 9,
+		items: 25,
+		displayedPages: 5,
 		prevText:"前へ",
 		nextText:"次へ",
 		cssStyle: 'light-theme',
@@ -422,8 +422,8 @@
 		$(recommendedPage6).show();
 	}
 	$(".popular-pagination").pagination({
-		items: 9,
-		displayedPages: 9,
+		items: 25,
+		displayedPages: 5,
 		prevText:"前へ",
 		nextText:"次へ",
 		cssStyle: 'light-theme',
