@@ -1162,7 +1162,7 @@ input[type=checkbox]:checked + .customLabel:before {
 .content .list-group .grid-medium {
   width: 33.3333333333%; }
   .content .list-group .grid-medium .post-thumb {
-    height: 218px !important; }
+    height: 218px; }
     .content .list-group .grid-medium .post-thumb .hover-posts span i {
       font-size: 14px; }
   .content .list-group .grid-medium .post-des h6 {
