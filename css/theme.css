@@ -1349,16 +1349,17 @@ input[type=checkbox]:checked + .customLabel:before {
   padding-bottom: 30px; }
   #movies #owl-demo-movie .item-movie {
     overflow: hidden;
-    text-align: center; }
+    text-align: center;
+    border: none; }
     #movies #owl-demo-movie .item-movie figure {
       position: relative;
-      width: 185px;
-      height: 260px;
       margin: 0;
-      border: 1px solid #ececec; }
+      border: none; }
       #movies #owl-demo-movie .item-movie figure img {
         width: 100%;
         height: 100%;
+	border-radius: 50%;
+        border: 2px solid #e6e6e6;
         -o-object-fit: cover;
         object-fit: cover; }
       #movies #owl-demo-movie .item-movie figure a.hover-posts span i {
