@@ -159,9 +159,15 @@ p{
 .removeMargin {
   margin: 0 !important; }
 
-.googleAdv {
+.ad-large {
   padding: 30px 0;
-  text-align: center; }
+  text-align: center;
+  display: block; }
+
+.ad-small {
+  padding: 30px 0;
+  text-align: center;
+  display: none; }
 
 .form-error {
   margin-top: 0 !important;
