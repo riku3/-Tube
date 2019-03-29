@@ -94,6 +94,10 @@
         width: 100% !important;
         margin: 0;
     }
+    .yt_video img { /* 親要素内100%でサムネイル画像を表示する */
+        width: 100% !important;
+        height: 130.8px !important;
+    }
     /* sidebar */
     .sidebar .widgetBox .widgetContent .social-links .socialButton{
         margin-bottom: 10px;
