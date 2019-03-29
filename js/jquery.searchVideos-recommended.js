@@ -1,5 +1,5 @@
 (function(jQuery) {
-    var searchTerm = '猫 かわいい';
+    var searchTerm = '猫 かわいい 子猫';
     getRequest(searchTerm);
   
   function getRequest(searchTerm){
@@ -7,7 +7,7 @@
       "q": searchTerm,
       "part": 'snippet',
       "maxResults": '50',
-      "order": 'viewCount',
+      "order": 'date',
       "type": 'video',
       "videoEmbeddable": true,
       "fields": 'nextPageToken,items(id(videoId),snippet(title,channelTitle,publishedAt,thumbnails(high(url))))',
@@ -24,7 +24,7 @@
         "q": searchTerm,
         "part": 'snippet',
         "maxResults": '50',
-        "order": 'viewCount',
+        "order": 'date',
         "type": 'video',
         "videoEmbeddable": true,
         "fields": 'nextPageToken,items(id(videoId),snippet(title,channelTitle,publishedAt,thumbnails(high(url))))',
@@ -41,7 +41,7 @@
           "q": searchTerm,
           "part": 'snippet',
           "maxResults": '50',
-          "order": 'viewCount',
+          "order": 'date',
           "type": 'video',
           "videoEmbeddable": true,
           "fields": 'items(id(videoId),snippet(title,channelTitle,publishedAt,thumbnails(high(url))))',
