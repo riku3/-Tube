@@ -270,6 +270,14 @@
     .hover-posts {
         display: none;
     }
+    /* Ad */
+    .ad-large {
+        display: none;
+    }
+
+    .ad-small {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 640px){
