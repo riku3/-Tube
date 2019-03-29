@@ -1,5 +1,5 @@
 (function(jQuery) {
-    var searchTerm = 'cat cute';
+    var searchTerm = '猫 かわいい 子猫';
     getRequest(searchTerm);
   
   function getRequest(searchTerm){
