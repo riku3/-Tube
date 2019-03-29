@@ -66,7 +66,9 @@
         '<div class="item large-4 medium-6 columns grid-medium popular-selection" id="popular-page-' + index + '">' +
             '<div class="post thumb-border">' +
                 '<div class="post-thumb">' +
-                    '<a href="' + 'https://www.youtube.com/watch?v=' + value.id.videoId + '">' + '<img src="' + value.snippet.thumbnails.high.url + '">' + '</a>' +
+                    '<div class="yt">' +
+                        '<div class="yt_video" youtube="https://www.youtube.com/embed/' + value.id.videoId + '?rel=0&showinfo=0&autoplay=1">' + '<img src="' + value.snippet.thumbnails.high.url + '">' + '</div>' +
+                    '</div>' +
                     '<div class="video-stats clearfix">' +
                         '<div class="thumb-stats pull-left">' +
                             '<i class="fas fa-paw"></i>' +
