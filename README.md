@@ -4,5 +4,5 @@
 URL:https://www.cat-movies.com
 
 ## デモ
-![result](https://github.com/riku3/cat-movies/にゃんTube_demo.mp4)
+![にゃんTube](https://github.com/riku3/cat-movies/blob/master/%E3%81%AB%E3%82%83%E3%82%93Tube_demo.png)
 
